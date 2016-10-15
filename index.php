@@ -23,27 +23,17 @@ get_header(); ?>
                         </li>
                         <li>
                             <a href="#">
+                                <span>Produits</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
                                 <span>Réalisations</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <span>Particuliers</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span>Artisans</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
                                 <span>Contact</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span>Blog</span>
                             </a>
                         </li>
                     </ul>
