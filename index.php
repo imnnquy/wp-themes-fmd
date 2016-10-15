@@ -13,44 +13,57 @@
  */
 
 get_header(); ?>
-
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-		<?php
-		if ( have_posts() ) :
-
-			if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-
-			<?php
-			endif;
-
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
-
-				/*
-				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_format() );
-
-			endwhile;
-
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif; ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php
-get_sidebar();
+    <div class="row fmd-body">
+        <div class="col-md-1 fmd-menu">
+            <div class="sidebar-wrapper margin-top-30">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#"><span >Accueil</span></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Réalisations</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Particuliers</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Artisans</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Contact</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Blog</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="col-md-10 fmd-banner">
+            <div class="wrapper-carousel-3d">
+                <div data-carousel-3d=""> <img src="<?php echo get_template_directory_uri(); ?>/images/left.png" data-carousel-3d-left=""> <img src="<?php echo get_template_directory_uri(); ?>/images/right.png" data-carousel-3d-right="">
+                    <ul data-carousel-3d-children="">
+                        <li><img src="<?php echo get_template_directory_uri(); ?>/images/FMD-update-01.png"></li>
+                        <li><img src="<?php echo get_template_directory_uri(); ?>/images/FMD-update-02.png"></li>
+                        <li selected=""><img src="<?php echo get_template_directory_uri(); ?>/images/FMD-update-03.png"></li>
+                        <li><img src="<?php echo get_template_directory_uri(); ?>/images/FMD-update-04.png"></li>
+                        <li><img src="<?php echo get_template_directory_uri(); ?>/images/FMD-update-05.png"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <?php
 get_footer();
