@@ -4,7 +4,7 @@ This is a Wordpress theme, just zip all of them then install to your WP site
 
 ## Screenshot
 
-<img src='https://raw.githubusercontent.com/nnquy/prework-swift/master/demoTippy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://raw.githubusercontent.com/nnquy/wp-themes-fmd/master/screenshot.png' title='Screenshot' width='' alt='Screenshot' />
 
 ## Contributors
 
