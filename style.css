@@ -29,19 +29,19 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Elements
 # Forms
 # Navigation
-	## Links
-	## Menus
+    ## Links
+    ## Menus
 # Accessibility
 # Alignments
 # Clearings
 # Widgets
 # Content
-	## Posts and pages
-	## Comments
+    ## Posts and pages
+    ## Comments
 # Infinite scroll
 # Media
-	## Captions
-	## Galleries
+    ## Captions
+    ## Galleries
 --------------------------------------------------------------*/
 
 
@@ -91,7 +91,7 @@ body {
 
 .fmd-searchbox {
     height: 20px;
-    background: #000;
+    background: #252530;
     border-radius: 0px;
     margin-top: 4px;
 }
@@ -136,25 +136,181 @@ body {
 
 .fmd-menu {
     background-color: #C6C6C6;
-    height: 450px;
+    height: 560px;
     border-right: 1px solid black;
 }
 
 .fmd-banner {
-    background-image: radial-gradient(center center, circle cover, #E0E0E0, #C6C6C6);
-    background-image: -webkit-radial-gradient(center center, circle cover, #E0E0E0, #C6C6C6);
-    background-image: -moz-radial-gradient(center center, circle cover, #E0E0E0, #C6C6C6);
+    background-image: radial-gradient(center center, circle cover, #ffffff, #C6C6C6);
+    background-image: -webkit-radial-gradient(center center, circle cover, #ffffff, #C6C6C6);
+    background-image: -moz-radial-gradient(center center, circle cover, #ffffff, #C6C6C6);
 }
 
-.wrapper-carousel-3d {
+.fmd-footer hr {
+    margin-top: 60px;
+    border: 1px solid #C36628
+}
+
+.fmd-footer {
+    height: 120px;
+}
+
+
+/* CAROUSEL */
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    color: #eee;
+    background: #020223;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+a {
+    color: #DA2020;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #D6F300;
+}
+
+h1 {
+    text-shadow: 2px 3px 3px #555;
+    text-align: center;
+    margin: 30px auto;
+    margin-bottom: 34px;
+}
+
+#wrap {
+    height: 548px;
+}
+
+#showcase {
     height: 450px;
+    margin-top: 12px;
+    visibility: hidden;
 }
 
-.fmd-footer hr{
-	margin-top: 80px;
-	border: 1px solid #C36628
+#showcase img {
+    cursor: pointer;
+    border: 1px solid black;
 }
 
-.fmd-footer{
-	height: 200px;
+#item-title {
+    color: #C36628;
+    font-size: xx-large;
+    margin: 0px 30px;
+    cursor: pointer;
 }
+
+.title-item-container {
+    font-family: GTHaptikTrial;
+    text-align: center;
+    cursor: pointer;
+}
+
+#item-title-left, #item-title-right {
+    color: #A7A7A8;
+    font-size: x-large;
+}
+
+.nav {
+    text-align: center;
+}
+
+.nav > button {
+    width: 64px;
+    height: 36px;
+    color: #666;
+    font: bold 16px arial;
+    text-decoration: none;
+    text-align: center;
+    margin: 5px;
+    text-shadow: 0px 1px 0px #f5f5f5;
+    background: #f6f6f6;
+    border: solid 2px rgba(0, 0, 0, 0.4);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.nav > button:active,
+.nav > button.down {
+    background: #dfdfdf;
+    border: solid 2px rgba(0, 0, 0, 0.6);
+    box-shadow: none;
+}
+
+#get {
+    font-size: 20px;
+    text-align: center;
+}
+
+#download {
+    margin: 8px auto;
+    margin-top: 12px;
+    display: block;
+}
+
+#license {
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+}
+
+#share {
+    position: absolute;
+    left: 4px;
+    top: 478px;
+}
+
+.fb-like {
+    vertical-align: top;
+}
+
+.twitter-share-button {
+    width: 84px !important;
+    margin-left: 8px;
+}
+
+#credits {
+    color: #c9c9c9;
+    padding: 10px;
+    border: 2px #999 dashed;
+    position: absolute;
+    right: 0;
+    bottom: 83px;
+}
+
+#credits ul {
+    font-size: 14px;
+    list-style-type: none;
+    padding-left: 2px;
+    margin: 2px 0;
+}
+
+#credits .author {
+    color: white;
+}
+
+
+/* CAROUSEL */

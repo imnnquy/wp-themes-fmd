@@ -41,16 +41,17 @@ get_header(); ?>
             </div>
         </div>
         <div class="col-md-10 fmd-banner">
-            <div class="wrapper-carousel-3d">
-                <div data-carousel-3d=""> <img src="<?php echo get_template_directory_uri(); ?>/images/left.png" data-carousel-3d-left=""> <img src="<?php echo get_template_directory_uri(); ?>/images/right.png" data-carousel-3d-right="">
-                    <ul data-carousel-3d-children="">
-                        <li><img src="<?php echo get_template_directory_uri(); ?>/images/FMD-update-01.png"></li>
-                        <li><img src="<?php echo get_template_directory_uri(); ?>/images/FMD-update-02.png"></li>
-                        <li selected=""><img src="<?php echo get_template_directory_uri(); ?>/images/FMD-update-03.png"></li>
-                        <li><img src="<?php echo get_template_directory_uri(); ?>/images/FMD-update-04.png"></li>
-                        <li><img src="<?php echo get_template_directory_uri(); ?>/images/FMD-update-05.png"></li>
-                    </ul>
-                </div>
+            <div id="wrap">
+                <div id="showcase" class="noselect"> <img class="cloud9-item" src="<?php echo get_template_directory_uri(); ?>/images/FMD-update-01.png" alt="portes"> <img class="cloud9-item" src="<?php echo get_template_directory_uri(); ?>/images/FMD-update-02.png" alt="stores"> <img class="cloud9-item" src="<?php echo get_template_directory_uri(); ?>/images/FMD-update-03.png" alt="fenetre"> <img class="cloud9-item" src="<?php echo get_template_directory_uri(); ?>/images/FMD-update-04.png" alt="portes"> <img class="cloud9-item" src="<?php echo get_template_directory_uri(); ?>/images/FMD-update-05.png" alt="stores"></div>
+                <p class="title-item-container">
+                    <span id="item-title-left">&nbsp;</span>
+                    <span id="item-title">&nbsp;</span>
+                    <span id="item-title-right">&nbsp;</span>
+                </p>
+<!--                 <div class="nav" class="noselect">
+                    <button id="buttonLeft" class="slider-nav-button"> ← </button>
+                    <button id="buttonRight" class="slider-nav-button"> → </button>
+                </div> -->
             </div>
         </div>
         <div class="col-md-1"></div>
